@@ -1,3 +1,121 @@
-*{
-    box-sizing: border-box;
+$red: #bd0a0a;
+$black: #000000;
+
+
+.container {
+    max-width: 1066px;
+    margin: 0 auto;
+}
+
+.divider{
+    height: 2px;
+    background: $black;
+    width: 100%;
+}
+.header-info {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-lang {
+    a {
+        text-decoration: none;
+        border-bottom: 1px solid;
+        color: #363636;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $red;
+            transition: .3s all;
+        }
+    }
+
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-text {
+        font-weight: bold;
+        font-size: 24px;
+    }
+}
+
+.navbar {
+    &-list {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    &-link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $black;
+        padding: 5px 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+
+    &-link:hover {
+        color: #ffff;
+        background: rgb(224, 5, 5);
+        transition: .3s all;
+    }
+}
+
+.section-2 {
+    &-title h1 {
+        max-width: 436px;
+        font-size: 36px;
+        margin-bottom: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+    }
+    &-title span{
+        color: $red;
+    }
+    &-title p {
+        max-width: 525px;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+.section-3{
+    &-title{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    &-title h1{
+        margin-bottom: 0;
+    }
+    &-title span{
+        color: $red;
+        text-align: center;
+    }
+    &-title p{
+        text-align: center;
+        max-width: 625px;
+    }
+    &-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-button button{
+        border: none;
+        background: $red;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        cursor: pointer;
+        padding: 10px 25px;
+        text-transform: uppercase;
+        border-radius: 3px;
+    }
 }
