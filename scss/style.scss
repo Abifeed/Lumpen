@@ -12,13 +12,46 @@ $black: #000000;
     background: $black;
     width: 100%;
 }
+
 .header-info {
     display: flex;
     justify-content: space-between;
-
+    &-contact{
+        margin-top: 67px;
+        max-width: 80px;
+    }
+    &-tel{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 9px;
+        text-align: center;
+        & a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: rgb(224, 5, 5);
+            }
+        }
+    
+        
+    }
+    &-social{
+        display: flex;
+        justify-content: space-around;
+    }
+    &-btn button{
+        text-transform: uppercase;
+        border: none;
+        background: $red;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 9px;
+        margin: 0;
+        cursor: pointer;
+    }
 }
 
 .header-lang {
+    margin-top: 70px;
     a {
         text-decoration: none;
         border-bottom: 1px solid;
@@ -44,6 +77,10 @@ $black: #000000;
         font-weight: bold;
         font-size: 24px;
     }
+}
+.header-social-link img{
+    width: 18px;
+    height: 18px;
 }
 
 .navbar {
@@ -94,6 +131,7 @@ $black: #000000;
     }
     &-title h1{
         margin-bottom: 0;
+        font-family: 'Open Sans', sans-serif;
     }
     &-title span{
         color: $red;
@@ -117,5 +155,18 @@ $black: #000000;
         padding: 10px 25px;
         text-transform: uppercase;
         border-radius: 3px;
+    }
+}
+.section-4{
+    &-title{
+        display: flex;
+        justify-content: center;
+    }
+    &-title h1{
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+    }
+    &-title span{
+        color: $red;
     }
 }
