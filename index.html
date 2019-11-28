@@ -51,25 +51,25 @@
           <div class="divider"></div>
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="" class="navbar-link">главное</a>
+              <a href="#footer" class="navbar-link" id="main">главное</a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="navbar-link">о нас</a>
+              <a href="#" class="navbar-link" id="about">о нас</a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="navbar-link">процесс</a>
+              <a href="#" class="navbar-link" id="process">процесс</a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="navbar-link">портфолио сайтов</a>
+              <a href="#" class="navbar-link" id="portfolio">портфолио сайтов</a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="navbar-link">услуги</a>
+              <a href="#" class="navbar-link" id="services">услуги</a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="navbar-link">блог</a>
+              <a href="#" class="navbar-link" id="blog">блог</a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="navbar-link">контакты</a>
+              <a href="#" class="navbar-link" id="contacts">контакты</a>
             </li>
             <form action="GET"></form>
           </ul>
@@ -88,7 +88,7 @@
             </p>
           </div>
           <div class="section-2-links">
-            <button class="order-button">ЗАКАfЗАТЬ</button>
+            <button class="order-button">ЗАКАЗАТЬ</button>
             <button class="video-button">ВИДЕО</button>
           </div>
         </div>
@@ -110,11 +110,92 @@
       </div>
     </section>
     <section class="section-4">
+      <div class="container">
       <div class="section-4-title">
         <h1>примеры <span>работ</span></h1>
       </div>
+      <div class="section-4-content">
+        <div class="work-examples">
+            <ul class="work-examples-list">
+              <li class="work-examples-item">
+                  
+                <a href="" class="work-exaples-link">
+                  <figure>
+                    <img src="img/Слой_6.svg" alt="">
+                  </figure>
+                  <span>Наш сайт divini.corp</span>
+                </a>
+              </li>
+              <li class="work-examples-item">
+                  <a href="#" class="work-exaples-link">
+                    <figure>
+                    </figure>
+                    <span>Наш сайт divini.corp</span>
+                  </a></li>
+              <li class="work-examples-item">
+                  
+                  <a href="#" class="work-exaples-link">
+                    <figure>
+                      
+                    </figure>
+                    <span>Наш сайт divini.corp</span>
+                  </a></li>
+              <li class="work-examples-item">
+                  
+                  <a href="#" class="work-exaples-link">
+                    <figure>
+                      
+                    </figure>
+                    <span>Наш сайт divini.corp</span>
+                  </a></li>
+              <li class="work-examples-item">
+                  <a href="#" class="work-exaples-link">
+                    <figure>
+                      
+                    </figure>
+                    <span>Наш сайт divini.corp</span>
+                  </a></li>
+              <li class="work-examples-item">
+                  
+                  <a href="#" class="work-exaples-link">
+                    <figure>
+                      
+                    </figure>
+                    <span>Наш сайт divini.corp</span>
+                  </a></li>
+            </ul>
+        </div>
+        <div class="work-graphics">
+          <ul class="work-graphics-list">
+            <li class="work-graphics-item">
+              <img src="img/section-4-1.png" alt="">
+              <h1>35</h1>
+              <span>выполненных работ</span>
+            </li>
+            <li class="work-graphics-item">
+              <img src="img/section-4-2.png" alt="">
+              <h1>90%</h1>
+              <span>положительных отзывов</span>
+            </li>
+            <li class="work-graphics-item">
+              <img src="img/section-4-3.png" alt="">
+              <h1>2 <span id="title-span">дня</span></h1>
+              <span>реального опыта</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     </section>
-    <footer class="footer">
+    <div class="section-5">
+      <div class="container">
+        <div class="section-5-title">
+          <h1>ОТЗЫВЫ</h1>
+          <hr size=3px width=202px align="center" color="#cc0000">
+        </div>
+      </div>
+    </div>
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-title">
           <div class="footer-mean-title">
@@ -129,19 +210,15 @@
         <div class="footer-content">
           <form action="GET" class="footer-form">
             <label for="" class="input input-name">
-              <input type="text" placeholder="Имя" name="name" />
+                <i class="fa fa-user" style="font-size:35px;"></i><input type="text" placeholder="Имя" name="name" />
             </label>
             <label for="" class="input input-tel">
-              <input
-                type="tel"
-                placeholder="Номер телефона"
-                name="phone number"
-              />
+                <i class="fa fa-phone" style="font-size: 35px;"></i><input type="tel"placeholder="Номер телефона"name="phone number"/>
             </label>
             <label for="" class="input input-email">
-              <input type="email" placeholder="Почта" name="user email" />
+                <i class="fa fa-envelope" style="font-size:35px;"></i><input type="email" placeholder="Почта" name="user email" />
             </label>
-            
+              <input type="SUBMIT" class="input-submit">
           </form>
           <div class="footer-contact">
             <div class="footer-contact-tel">
