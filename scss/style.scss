@@ -265,7 +265,26 @@ html {
 
         &-item {
             max-width: 349px;
-
+            position: relative;
+            .rectangle{
+                position: absolute;
+            }
+            .first-rectangle{
+                left: -14px;
+                top: -15px;
+            }
+            .second-rectangle{
+                right: -14px;
+                top: -15px;
+            }
+            .third-rectangle{
+                top: 76px;
+                left: -14px;
+            }
+            .fourth-rectangle{
+                top: 76px;
+                right: -15px;
+            }
             a {
                 display: flex;
                 flex-direction: column;
@@ -295,7 +314,9 @@ html {
                 box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
                 background-color: #000000;
             }
+            
         }
+        
     }
     .work-graphics{
         &-list{
@@ -311,7 +332,7 @@ html {
             align-items: center;
             cursor: pointer;
             &:hover{
-                transform: rotate(15deg)
+                transform: rotate(60deg)
             }
         }
         h1{
@@ -331,7 +352,6 @@ html {
         }
     }
 }
-
 .section-5 {
     &-title {
         display: flex;
@@ -489,3 +509,6 @@ html {
         }
     }
 }
+
+
+

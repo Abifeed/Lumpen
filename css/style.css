@@ -300,6 +300,31 @@ html {
 
 .section-4 .work-examples-item {
   max-width: 349px;
+  position: relative;
+}
+
+.section-4 .work-examples-item .rectangle {
+  position: absolute;
+}
+
+.section-4 .work-examples-item .first-rectangle {
+  left: -14px;
+  top: -15px;
+}
+
+.section-4 .work-examples-item .second-rectangle {
+  right: -14px;
+  top: -15px;
+}
+
+.section-4 .work-examples-item .third-rectangle {
+  top: 76px;
+  left: -14px;
+}
+
+.section-4 .work-examples-item .fourth-rectangle {
+  top: 76px;
+  right: -15px;
 }
 
 .section-4 .work-examples-item a {
@@ -367,8 +392,8 @@ html {
 }
 
 .section-4 .work-graphics-item:hover {
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
 }
 
 .section-4 .work-graphics h1 {
