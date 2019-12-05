@@ -7,7 +7,7 @@ $black: #000000;
 
 body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -17,7 +17,9 @@ html {
     width: 100%;
     height: 100%;
 }
-
+ul{
+    padding: 0;
+}
 .container {
     max-width: 1066px;
     margin: 0 auto;
@@ -66,7 +68,7 @@ html {
         width: 77px;
         height: 25px;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
-        background-color: #bd0a0a;
+        background-color: #dd0303;
         opacity: 0.75;
         font-family: "Open Sans";
         font-size: 9px;
@@ -187,7 +189,6 @@ html {
         background-color: #ffffff;
         cursor: pointer;
 
-        &:hover {}
     }
 }
 
@@ -214,12 +215,66 @@ html {
         max-width: 625px;
     }
 
+    &-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &-image {
+        position: relative;
+        width: 100%;
+        max-width: 229px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        img{
+            background-color: #bd0a0a;
+            height: 350px;
+        }
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            font-weight: 900;
+            font-style: italic;
+        }
+        .sale-flag{
+            position: absolute;
+            width: 77px;
+            height: 70px;
+            transform: rotate(-40deg);
+            p{
+                margin: 0;
+                color: #fff;
+                background-color: #000;
+                font-size: 8px;
+                font-weight: 300;
+                text-align: center;
+                padding-right: 5px;
+            }
+            }
+           
+        &-under{
+            position: absolute;
+            bottom: 0;
+            background: #000;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            font-style: italic;
+        }
+    }
     &-button {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
+    
     &-button button {
         border: none;
         background: $red;
@@ -230,6 +285,10 @@ html {
         border-radius: 3px;
     }
 }
+
+
+
+
 
 .section-4 {
     &-title {
@@ -249,10 +308,11 @@ html {
 
     .work-examples {
         display: flex;
-        ul{
+
+        ul {
             padding: 0;
         }
-        
+
 
         &-list {
             list-style: none;
@@ -266,25 +326,31 @@ html {
         &-item {
             max-width: 349px;
             position: relative;
-            .rectangle{
-                position: absolute;
+            
+            .rectangle {
+                position: absolute;               
             }
-            .first-rectangle{
+
+            .first-rectangle {
                 left: -14px;
                 top: -15px;
             }
-            .second-rectangle{
+
+            .second-rectangle {
                 right: -14px;
                 top: -15px;
             }
-            .third-rectangle{
+
+            .third-rectangle {
                 top: 76px;
                 left: -14px;
             }
-            .fourth-rectangle{
+
+            .fourth-rectangle {
                 top: 76px;
                 right: -15px;
             }
+
             a {
                 display: flex;
                 flex-direction: column;
@@ -313,45 +379,59 @@ html {
                 height: 221px;
                 box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
                 background-color: #000000;
+                overflow: hidden;
             }
-            
+            .figure-img{
+                transition: .4s;
+            }
+            .figure-img:hover{
+                transform: scale(1.05);
+            }
+
         }
-        
+
     }
-    .work-graphics{
-        &-list{
+
+    .work-graphics {
+        &-list {
             list-style: none;
             display: flex;
             justify-content: space-around;
             padding: 0;
             flex-wrap: wrap;
         }
-        &-item{
+
+        &-item {
             display: flex;
             flex-direction: column;
             align-items: center;
             cursor: pointer;
-            &:hover{
-                transform: rotate(60deg)
+            transition: .6s;
+            &:hover {
+                transform: scale(1.03);
             }
         }
-        h1{
+
+        h1 {
             margin: 0;
             color: red;
             font-size: 36px;
             font-weight: 700;
-            #title-span{
+
+            #title-span {
                 color: #000;
                 font-size: 36px;
                 font-weight: 700;
             }
         }
-        span{
+
+        span {
             font-size: 24px;
             font-weight: 600;
         }
     }
 }
+
 .section-5 {
     &-title {
         display: flex;
@@ -365,6 +445,51 @@ html {
             font-weight: 700;
         }
     }
+    &-content{
+        height: 100vh;
+        overflow: hidden;
+        margin-bottom: 25px;
+        max-height: 630px;
+    }
+    .section-5-cards{
+        position: absolute;
+        width: 100%;
+        max-width: 985px;
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        margin: 20px;
+        position: relative;
+        width: 313px;
+        height: 600px;
+        perspective: 1000px;
+        & img{
+            max-width: 208px;
+        }
+    }
+    .front, .back{
+        position: absolute;
+        width: 313px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 1.4s;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        border: 1px solid #000;
+    }
+    .front {
+        background-color: #ffffff;
+    }
+    .back {
+    background-color: #BDBDBD;
+    transform: rotateY(180deg);
+    }
+    .card:hover .front {transform: rotateY(180deg);}
+    .card:hover .back {transform: rotateY(360deg);}
 }
 
 .footer {
@@ -509,6 +634,3 @@ html {
         }
     }
 }
-
-
-
